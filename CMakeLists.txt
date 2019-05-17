@@ -3,6 +3,8 @@ project(RandomForest)
 
 set(CMAKE_CXX_STANDARD 17)
 
+include_directories(mnist)
+
 add_executable(RandomForest
         main.cpp
         DecisionTree.cpp

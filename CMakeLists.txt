@@ -12,4 +12,4 @@ add_executable(RandomForest
         EntropyCalculator.cpp
         EntropyCalculator.h
         FrequencyTable.cpp
-        FrequencyTable.h)
+        FrequencyTable.h DecisionForest.cpp DecisionForest.h)

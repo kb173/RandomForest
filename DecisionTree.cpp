@@ -147,6 +147,9 @@ std::string DecisionTree::classify(std::map<std::string, std::string> attributes
     std::map<std::string, std::shared_ptr<DecisionTreeNode>> nextNodes = currentNode->getNextNodes();
 
     do {
+        if (nextNodes[attributes[currentNode->getAttribute()]] == nullptr) {
+            break; // FIXME why can this be the case?
+        }
         currentNode = nextNodes[attributes[currentNode->getAttribute()]];
         nextNodes = currentNode->getNextNodes();
     } while(!nextNodes.empty());

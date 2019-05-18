@@ -22,7 +22,6 @@ public:
 
 private:
     std::list<DecisionTree> forest;
-
 };
 
 
